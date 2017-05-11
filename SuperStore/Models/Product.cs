@@ -16,9 +16,8 @@ namespace SuperStore.Models
         [Range(0, 5)]
         public int Price { get; set; }
 
-        public int DepartmentID { get; set; }
-
         public virtual ICollection<Purchase> Purchases { get; set; }
         public virtual ICollection<Employee> Employees { get; set; }
+        public ICollection<object> Instructors { get; internal set; }
     }
 }
