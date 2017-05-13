@@ -164,6 +164,31 @@
     </Compile>
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Migrations\201705112104260_InitialCreate.cs" />
+    <Compile Include="Migrations\201705112104260_InitialCreate.Designer.cs">
+      <DependentUpon>201705112104260_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705121420416_modelupdates.cs" />
+    <Compile Include="Migrations\201705121420416_modelupdates.Designer.cs">
+      <DependentUpon>201705121420416_modelupdates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705121428395_deletedcustomerstuff.cs" />
+    <Compile Include="Migrations\201705121428395_deletedcustomerstuff.Designer.cs">
+      <DependentUpon>201705121428395_deletedcustomerstuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705122238445_MaxLengthOnNames.cs" />
+    <Compile Include="Migrations\201705122238445_MaxLengthOnNames.Designer.cs">
+      <DependentUpon>201705122238445_MaxLengthOnNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705122243562_ColumnFirstName.cs" />
+    <Compile Include="Migrations\201705122243562_ColumnFirstName.Designer.cs">
+      <DependentUpon>201705122243562_ColumnFirstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705122302355_ColumnFirst.cs" />
+    <Compile Include="Migrations\201705122302355_ColumnFirst.Designer.cs">
+      <DependentUpon>201705122302355_ColumnFirst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Product.cs" />
@@ -246,6 +271,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201705112104260_InitialCreate.resx">
+      <DependentUpon>201705112104260_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705121420416_modelupdates.resx">
+      <DependentUpon>201705121420416_modelupdates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705121428395_deletedcustomerstuff.resx">
+      <DependentUpon>201705121428395_deletedcustomerstuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705122238445_MaxLengthOnNames.resx">
+      <DependentUpon>201705122238445_MaxLengthOnNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705122243562_ColumnFirstName.resx">
+      <DependentUpon>201705122243562_ColumnFirstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705122302355_ColumnFirst.resx">
+      <DependentUpon>201705122302355_ColumnFirst.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

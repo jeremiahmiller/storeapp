@@ -8,17 +8,6 @@ namespace SuperStore.DAL
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Purchase> Purchases { get; set; }
-        public DbSet<Customer> Customers { get; set; }
-
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-
-            modelBuilder.Entity<Product>()
-                .HasMany(c => c.Employees).WithMany(i => i.Product)
-                .Map(t => t.MapLeftKey("ProductID")
-                    .MapRightKey("EmployeeID")
-                    .ToTable("ProductEmployee"));
-        }
+        public DbSet<Customer> Customers { get; set; } 
     }
 }

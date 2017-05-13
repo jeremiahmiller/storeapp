@@ -7,7 +7,7 @@ namespace SuperStore.Models
 {
     public class Employee
     {
-        public int ID { get; set; }
+        public int EmployeeID { get; set; }
 
         [Required]
         [Display(Name = "Last Name")]
@@ -31,7 +31,6 @@ namespace SuperStore.Models
             get { return LastName + ", " + FirstMidName; }
         }
 
-        public virtual ICollection<Product> Courses { get; set; }
         public ICollection<Product> Products { get; internal set; }
         public ICollection<Product> Product { get; internal set; }
     }
